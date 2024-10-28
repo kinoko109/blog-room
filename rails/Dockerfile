@@ -1,4 +1,4 @@
-FROM ruby:3.3.3-alpine
+FROM ruby:3.1.2
 RUN apt-get update -qq && apt-get install -y vim
 
 RUN mkdir /app
