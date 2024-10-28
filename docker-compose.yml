@@ -25,4 +25,4 @@ services:
     stdin_open: true
 
 volumes:
-  mysql_data:
+  mysql-data:
