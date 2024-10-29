@@ -1,2 +1,3 @@
 .idea
 ./rails/vendor
+./next/node_modules
