@@ -9,6 +9,9 @@ gem "bootsnap", require: false
 # MySQLに接続する
 gem "mysql2", "~> 0.5"
 
+# cors設定を管理する
+gem "rack-cors"
+
 # pumaサーバーを使えるようにする（標準gem）
 gem "puma", "~> 5.0"
 
