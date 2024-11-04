@@ -12,15 +12,6 @@ gem "mysql2", "~> 0.5"
 # cors設定を管理する
 gem "rack-cors"
 
-# pumaサーバーを使えるようにする（標準gem）
-gem "puma", "~> 5.0"
-
-# rails本体（標準gem）
-gem "rails", "~> 7.0.4"
-
-# タイムゾーン情報を提供する（標準gem）
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
-
 # ユーザー認証を提供
 gem "devise"
 
@@ -29,6 +20,15 @@ gem "devise-i18n"
 
 # ユーザーのトークン認証を提供
 gem "devise_token_auth"
+
+# pumaサーバーを使えるようにする（標準gem）
+gem "puma", "~> 5.0"
+
+# rails本体（標準gem）
+gem "rails", "~> 7.0.4"
+
+# タイムゾーン情報を提供する（標準gem）
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem "pry-byebug"
