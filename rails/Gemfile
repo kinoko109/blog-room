@@ -30,7 +30,14 @@ gem "rails", "~> 7.0.4"
 # タイムゾーン情報を提供する（標準gem）
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
+# 開発環境でメール送信をテスト
+gem "letter_opener_web"
+
 group :development, :test do
+  # 開発環境でメール送信をテストする
+  gem "letter_opener_web"
+
+  # pry コンソールを使えるようにする。
   gem "pry-byebug"
   gem "pry-doc"
   gem "pry-rails"
