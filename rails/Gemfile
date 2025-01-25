@@ -37,6 +37,10 @@ gem "letter_opener_web"
 gem "active_model_serializers"
 
 group :development, :test do
+  # テスト用データを作成する
+  gem "factory_bot_rails"
+  gem "faker"
+
   # 開発環境でメール送信をテストする
   gem "letter_opener_web"
 
