@@ -33,6 +33,9 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 # 開発環境でメール送信をテスト
 gem "letter_opener_web"
 
+# レスポンスJSONを制御する
+gem "active_model_serializers"
+
 group :development, :test do
   # 開発環境でメール送信をテストする
   gem "letter_opener_web"
