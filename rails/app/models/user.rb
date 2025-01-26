@@ -7,4 +7,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
   include DeviseTokenAuth::Concerns::User
+
+  # dependent: :destory→親レコードであるusers側が削除された場合に、子レコードであるarticlesも一緒に削除するオプション
+  has_many :articles, dependent: :destory
 end
