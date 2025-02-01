@@ -9,5 +9,5 @@ class User < ApplicationRecord
   include DeviseTokenAuth::Concerns::User
 
   # dependent: :destory→親レコードであるusers側が削除された場合に、子レコードであるarticlesも一緒に削除するオプション
-  has_many :articles, dependent: :destory
+  has_many :articles, dependent: :destroy
 end

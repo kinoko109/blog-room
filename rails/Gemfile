@@ -39,6 +39,12 @@ gem "active_model_serializers"
 # メッセージを日本語化
 gem "rails-i18n"
 
+# ページネーション機能を提供する
+gem "kaminari"
+
+# N+1発生時にアラートを表示する
+gem "bullet"
+
 group :development, :test do
   # テスト用データを作成する
   gem "factory_bot_rails"
